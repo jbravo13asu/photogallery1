@@ -1,0 +1,276 @@
+html {
+    box-sizing: border-box;
+    background-color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+    width: 80%;
+    margin: 0 auto;
+    min-width: 485px;
+    max-width: 1300px;
+    padding: 10px;
+}
+
+header {
+    color: #007d7b;
+    background-color: #ffffff;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 3em;
+    margin-top: -10px;
+    margin-bottom: 5px;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+
+nav {
+    background-color: #000000;
+    padding: 5px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+nav ul {
+    list-style-type: none;
+    flex-direction: row;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: right;
+}
+
+nav a {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    background-color: #007d7b;
+    color: #ffffff;
+    padding: 10px;
+}
+
+[href="#top"] {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    border-radius: 10px 0 0px 0px;
+}
+
+nav li {
+    padding-left: 15px;
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 1.25em;
+    padding-left: 5px;
+}
+
+#about, #gallery {
+    background-color: #ffffff;
+}
+
+#about {
+    margin-bottom: -20px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+
+#contact {
+    background-color: #000000;
+    color: #ffffff;
+    margin-left: -10px;
+    margin-right: -10px;
+    text-align: center;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-left: 100px;
+    padding-right: 100px;
+    grid-row-gap: 10px;
+}
+
+::placeholder {
+    color: #007d7b;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+input[type=submit] {
+    background: #007d7b;
+    color: #ffffff;
+    border-radius: 12px;
+    font-weight: bold;
+    width: 400px;
+    display: block;
+    margin: 0 auto;
+}
+
+input[type="submit"]:hover {
+    outline: 4px solid;
+    outline-color: #ffffff;
+}
+
+input[value] {
+    padding: 8px;
+    text-transform: uppercase;
+}
+
+div {
+    padding: 15px;
+}
+
+label {
+    font-size: 1em;
+    text-align: left;
+    text-transform: uppercase;
+    padding-left: 8px;
+    margin-bottom: -8px;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+.chile {
+	position: relative;
+	top: -30px;
+	color: white;
+    padding-bottom: -100px;
+}
+
+.guatemala {
+	position: relative;
+	top: 30px;
+	color: white;
+}
+
+.hawaii {
+	position: relative;
+	top: -30px;
+	color: white;
+}
+
+.iran {
+	position: relative;
+	top: -30px;
+	color: white;
+}
+
+.ireland {
+	position: relative;
+	top: 30px;
+	color: black;
+}
+
+.italy {
+	position: relative;
+	top: -30px;
+	color: black;
+}
+
+.moab {
+	position: relative;
+	top: 30px;
+	color: black;
+}
+
+.rocky {
+	position: relative;
+	top: 30px;
+	color: black;
+}
+
+.switzerland {
+	position: relative;
+	top: 30px;
+	color: black;
+}
+
+.uk {
+	position: relative;
+	top: 30px;
+	color: black;
+}
+
+.usa {
+	position: relative;
+	top: 30px;
+	color: black;
+}
+
+.wyoming {
+	position: relative;
+	top: 30px;
+	color: white;
+}
+
+
+
+footer {
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: small;
+}
+
+@media screen and(max-width: 480px) {
+    nav ul {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+
+    #photogrid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media screen and(min-width: 880px){
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }   
+
+    #photogrid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen  and(min-width: 1300px){
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+    }
+    
+}
+
+
+            
