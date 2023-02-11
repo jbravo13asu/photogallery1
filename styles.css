@@ -257,6 +257,10 @@ footer {
         grid-template-columns: 1fr;
         justify-content: center;
     }
+
+    #contact {
+        justify-content: center;
+    }
 }
 
 
